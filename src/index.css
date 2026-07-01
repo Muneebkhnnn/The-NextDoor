@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+@theme {
+  /* ---- color tokens ---- */
+  --color-ink: #0B0A09;       /* near-black, warm undertone */
+  --color-surface: #15130F;   /* raised panel */
+  --color-surface-2: #1D1A14; /* raised panel, lighter */
+  --color-line: #2C2820;      /* hairline borders */
+  --color-ember: #FF5A1F;     /* primary molten accent */
+  --color-ember-dim: #C2410C; /* pressed / secondary accent */
+  --color-cream: #F4EFE6;     /* primary text on dark */
+  --color-muted: #948C7E;     /* secondary text */
+  --color-teal: #2DBE9C;      /* rare success / online accent */
+
+  /* ---- type tokens ---- */
+  --font-display: "Bebas Neue", "Arial Narrow", sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-ink);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  background-color: var(--color-ink);
+  color: var(--color-cream);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: var(--color-ember);
+  color: var(--color-ink);
+}
+
+/* custom scrollbar — thin, in-brand */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-ink);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-line);
+  border-radius: 999px;
+  border: 2px solid var(--color-ink);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-ember-dim);
+}
+
+/* visible keyboard focus, everywhere */
+:focus-visible {
+  outline: 2px solid var(--color-ember);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: 0.01em;
+}
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* grid + scanline ambient backdrop, used behind hero */
+.bg-grid {
+  background-image:
+    linear-gradient(to right, rgba(244, 239, 230, 0.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(244, 239, 230, 0.045) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+.text-stroke {
+  -webkit-text-stroke: 1.5px var(--color-cream);
+  color: transparent;
+}
+
+/* hide native cursor on devices that support hover, for the cursor-follower */
+@media (pointer: fine) {
+  .cursor-none-capable {
+    cursor: none;
+  }
+
+  .cursor-none-capable,
+  .cursor-none-capable * {
+    cursor: none !important;
+  }
+}
+
+.noise-overlay {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  opacity: 0.035;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
