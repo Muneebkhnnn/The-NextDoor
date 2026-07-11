@@ -3,7 +3,7 @@ import { gsap } from "../lib/gsap";
 import RevealText from "../components/RevealText";
 import MagneticButton from "../components/MagneticButton";
 
-const BUDGETS = ["Under $999", "$1k–$3k", "$3k+", "Not sure yet"];
+const BUDGETS = ["Under $499", "$500–$2k", "$2k+", "Not sure yet"];
 
 function Field({ label, id, error, children }) {
   return (
