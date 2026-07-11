@@ -137,7 +137,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-16 flex flex-col gap-3 border-t border-[var(--color-line)] pt-8 sm:flex-row sm:items-center sm:justify-between">
           <p className="font-mono text-xs text-[var(--color-muted)]">
-            © {new Date().getFullYear()} Forgeworks Studio. All rights reserved.
+            © {new Date().getFullYear()} The NextDoor Studio. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             {["Privacy policy", "Terms of service"].map((item) => (

@@ -3,7 +3,7 @@ import { gsap } from "../lib/gsap";
 
 const LINES = [
   "$ npm run build",
-  "compiling studio.forgeworks...",
+  "compiling studio.The NextDoor...",
   "optimizing assets... done",
   "build ready in 1.2s",
 ];
@@ -60,7 +60,7 @@ export default function Loader({ onComplete }) {
       className="fixed inset-0 z-[100] flex flex-col items-start justify-center bg-[var(--color-ink)] px-6 sm:px-12"
       role="status"
       aria-live="polite"
-      aria-label="Loading Forgeworks"
+      aria-label="Loading The NextDoor"
     >
       <div className="mx-auto w-full max-w-md font-mono text-xs sm:text-sm text-[var(--color-muted)]">
         {LINES.slice(0, visibleLines).map((line, idx) => (

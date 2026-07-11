@@ -85,7 +85,7 @@ export default function Hero() {
 
         <div className="mt-10 flex flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
           <p className="hero-sub max-w-xl text-base text-[var(--color-muted)] sm:text-lg">
-            Forgeworks is a small studio of engineers and designers who design, build, and harden
+            The NextDoor is a small studio of engineers and designers who design, build, and harden
             web products end to end — for businesses, startups and teams tired of
             slow, fragile sites.
           </p>
