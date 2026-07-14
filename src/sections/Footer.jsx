@@ -66,7 +66,9 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <a href="#top" className="inline-block">
               <span className="font-display text-3xl tracking-wide text-[var(--color-cream)]">
-                FORGE<span className="text-[var(--color-ember)]">WORKS</span>
+                <span className="text-[var(--color-ember)] pr-2">The</span>
+                <span>Next</span>
+                <span className="text-[var(--color-ember)]">Door</span>
               </span>
             </a>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-[var(--color-muted)]">
@@ -76,7 +78,7 @@ export default function Footer() {
             <div className="mt-6 flex items-center gap-1">
               <span className="h-2 w-2 rounded-full bg-[var(--color-teal)]" aria-hidden="true" />
               <span className="font-mono text-xs uppercase tracking-wider text-[var(--color-muted)]">
-               Turning ideas into products
+                Turning ideas into products
               </span>
             </div>
           </div>
