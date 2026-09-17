@@ -182,7 +182,7 @@ export default function Contact() {
 
             <dl className="mt-12 flex flex-col gap-5">
               {[
-                { label: "Email", value: "muneebkhan.web@gmail.com" },
+                { label: "Email", value: "muneeb@thenextdoor.tech" },
                 { label: "Response time", value: "Within 24 hours" },
                 { label: "Current availability", value: "Accepting New Projects" },
               ].map(({ label, value }) => (
