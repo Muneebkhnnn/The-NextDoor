@@ -6,6 +6,7 @@ export const NAV_LINKS = [
   { label: "FAQ", href: "#faq" },
 ];
 
+// to update
 export const SERVICES = [
   {
     tag: "build",
@@ -37,6 +38,7 @@ export const SERVICES = [
   },
 ];
 
+// to update
 export const PROJECTS = [
   {
     name: "Northbound",
@@ -74,8 +76,6 @@ export const PROJECTS = [
     metric: "65% faster load time",
     color: "#FF5A1F",
   },
-  
-  
 ];
 
 export const PROCESS = [
@@ -152,54 +152,60 @@ export const TESTIMONIALS = [
 
 export const PRICING = [
   {
-    name: "Frontend",
-    price: "up till $499",
-    period: "one-time",
+    name: "Basic Business Website",
+    price: "$499",
     description:
-      "Modern, responsive websites and landing pages designed to showcase your business and convert visitors into customers.",
+      "Perfect for establishing a professional online presence, building credibility, and turning website visitors into potential customers.",
     features: [
-      "Responsive UI/UX",
-      "Up to 8 pages",
-      "SEO-ready",
-      "Animations & interactions",
-      "Contact forms",
-      "2 weeks of support",
+      "Custom, high-converting layout tailored to your brand",
+      "SEO-ready foundation to help you rank on Google",
+      "Blazing-fast performance and mobile optimization",
+      "Strategic call-to-actions (CTAs) to capture leads",
+      "Secure, spam-protected contact form setup",
+      "Google Analytics & Search Console integration",
+      "Social media links & Google Maps directory sync",
+      "Complete deployment (Hosting, domain link, & SSL setup)",
+      "Accessible and modern user-friendly structure",
+      "6 months of post-launch support",
     ],
     highlight: false,
   },
+
   {
-    name: "Full Stack",
-    price: "Starting at $500",
-    period: "most popular",
+    name: "Custom Web Software",
+    price: "$1,500+",
     description:
-      "Complete web applications with frontend, backend, authentication, databases, and third-party integrations.",
+      "For businesses that need more than a website — from e-commerce platforms and booking systems to custom business software built around the way they operate.",
     features: [
-      "Custom dashboard",
-      "Authentication",
-      "Database integration",
-      "Payment gateway",
-      "Admin panel",
-      "30 days of support",
+      "Everything included in the Growth Package",
+      "Fully tailored web application designed around your business workflows",
+      "Secure customer, staff, or admin accounts with private dashboard",
+      "Integrated payment systems for orders, invoices, and subscriptions",
+      "Custom modules for bookings, marketplaces, inventory, or memberships",
+      "Seamless API connections with the business tools you already use",
+      "Robust backend infrastructure and secure database setup",
+      "Advanced security with encrypted data protection and automatic backups",
     ],
     highlight: true,
   },
+
   {
-    name: "Custom Solution",
-    price: "Let's Talk",
-    period: "tailored pricing",
+    name: "Growth Plan + Easy CMS",
+    price: "$749",
     description:
-      "Need something unique? We'll design and build a solution that fits your business goals and requirements.",
+      "Built for businesses that want to easily manage, update, and publish their own website content whenever they need..",
     features: [
-      "Custom features",
-      "Business automation",
-      "API integrations",
-      "Scalable architecture",
-      "Priority support",
-      "Dedicated development",
+      "Everything included in the Basic Package",
+      "User-Friendly Dashboard for updating website content easily",
+      "Automatic image optimization for fast loading speeds",
+      "Built-in functionality for SEO-Ready Content",
+      "Priority Support and maintenance for your website",
+      "A Seamless Handover Kit with Recorded walkthroughs and guide for your team",
     ],
     highlight: false,
   },
 ];
+
 export const FAQS = [
   {
     question: "How long will my project take?",
